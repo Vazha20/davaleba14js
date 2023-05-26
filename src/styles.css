@@ -1,0 +1,322 @@
+#bodyColor {
+    background-color: gray;
+    overflow: hidden;
+}
+.sizing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+.bg {
+    background: url('http://127.0.0.1:5500/index.html');
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px);
+}
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+    margin-top: 250px;
+}
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+.panel h3 {
+    color: white;
+    background-color: #222222;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.panel.active {
+    flex: 6;
+}
+.panel.active h3 {
+    opacity: 20;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+:root {
+    --primary-color: #929292;
+    --secondary-color: #222222;
+}
+#moviebody {
+    background-color: var(--primary-color);
+    margin: 0;
+}
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--secondary-color);
+}
+.search {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+.search::placeholder {
+    color: #ffffff;
+}
+.search:focus {
+    outline: none;
+    background-color: var(--primary-color);
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie {
+    width: 300px;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.movie img {
+    width: 100%;
+}
+.movie-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2rem;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+.movie-info h3 {
+    margin-top: 0;
+}
+.movie-info span {
+    background-color: var(--primary-colors);
+    padding: 0.25rem 0.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.movie-info span.green {
+    color: lightgreen;
+}
+.movie-info span.orange {
+    color: orange;
+}
+.movie-info span.red {
+    color: red;
+}
+.overview {
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    overflow-y: auto;
+    transition: transform 0.3s ease-in;
+}
+.movie:hover .overview {
+    transform: translateY(0);
+}
+.seating-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+.seat {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 24px;
+    color: white;
+    cursor: pointer;
+}
+.seat.selected {
+    background-color: yellow;
+}
+.font_size {
+    font-size: 20px;
+    justify-content: space-between;
+    color: white;
+    align-content: space-between
+}
+.cart {
+    color: white;
+    padding: 10px;
+    background-color: #222222;
+}
+
+#tktColor {
+    background-color: #222222;
+}
+.box {
+    position: relative;
+    border-radius: 12px;
+    width: 330px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 18px;
+    background-color: #fcfcfc;
+    display: none;
+}
+.circle .register-head {
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 6px;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+.circle .register-body {
+    display: inline-block;
+    width: 35px;
+    margin: 0 auto;
+    margin-top: 26px;
+    height: 25px;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+.close {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    color: tomato;
+    font-size: 34px;
+}
+.close:hover {
+    cursor: pointer;
+}
+.registration-box {
+    margin-top: 43px;
+}
+label {
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    color: rgb(169, 171, 170);
+    margin-top: -62px;
+    padding-left: 18px;
+    text-align: left;
+    pointer-events: none;
+    transition: .4s;
+}
+input {
+    width: 95%;
+    height: 42px;
+    margin: 10px 1px 28px 1px;
+    padding: 9px;
+    font-size: 18px;
+    color: #555;
+    border: rgb(65, 118, 97) 1px solid;
+    outline: none;
+    border-radius: 5px;
+}
+input:focus~label,
+input:valid~label {
+    margin-top: -95px;
+    padding-left: 8px;
+    color: #026948;
+    font-weight: 500;
+}
+h1 {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    font-size: 21px;
+    font-weight: 300;
+}
+.circle {
+    position: absolute;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: -35px;
+    right: 0;
+    left: 0;
+    background-color: rgb(1, 170, 133);
+    border: 2px #fff solid;
+}
+.box .circle,
+.box span {
+    display: inline-block;
+    position: absolute;
+}
+.box span {
+    height: 2px;
+    background-color: rgb(1, 170, 133);
+}
+.body-text {
+    font-size: 17px;
+    line-height: 25px;
+}
+p {
+    margin-top: 28px;
+    font-size: 22px;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 10px 43px 10px 43px;
+    border: none;
+    border-radius: 32px;
+    font-size: 20px;
+    background-color: #026948;
+    color: #fcfcfc;
+}
+button:hover,
+button:focus {
+    background-color: #026948;
+    outline: #026948 2px solid;
+    cursor: pointer;
+}
+.circle .slant-right {
+    width: 29px;
+    top: 27px;
+    left: 16px;
+    transform: rotate(-45deg);
+    display: none;
+    animation: slant-animate 1s ease-in forwards;
+}
+.circle .slant-left {
+    width: 16px;
+    top: 32px;
+    left: 8px;
+    transform: rotate(50deg);
+    display: none;
+    animation: slant-animate .8s ease-in forwards;
+}
