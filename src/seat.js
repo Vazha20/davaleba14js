@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function getSeatPrice(seatNumber) {
     if (seatNumber <= 10) {
       return seatPrices.vip;
-    } else if (seatNumber <= 25) {
+    } else if (seatNumber <= 30) {
       return seatPrices.premium;
     } else {
       return seatPrices.standard;

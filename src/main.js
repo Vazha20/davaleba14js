@@ -16,6 +16,7 @@ let registrationBox = document.querySelector(".registration-box");
 let confirmationBox = document.querySelector(".confirmation-box");
 let btnSubmit = document.querySelector(".btnSubmit");
 
+
 btnSubmit.addEventListener("click", ()=>{
 
     bodyText.innerHTML="გამარჯობათ, " + first_name.value + " თქვენ წარმატებით გაიარეთ რეგისტრაცია";

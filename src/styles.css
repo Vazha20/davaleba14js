@@ -160,11 +160,13 @@ main {
 .seat.selected {
     background-color: yellow;
 }
-.font_size {
-    font-size: 20px;
-    justify-content: space-between;
+.font_size p{
+    font-size: 40px;
     color: white;
-    align-content: space-between
+    height: 15%;
+    
+   
+    
 }
 .cart {
     color: white;
@@ -331,4 +333,20 @@ p {
     background-color: yellow;
     border-radius: 20px;
     padding: 20px;
+    border-style: none;
+    
 }
+.arc{
+        width:500px;
+        height:5px;
+        border-radius:50%;
+        background-color: #929292;
+        
+        
+    }
+    .screenText{
+        color: rgb(114, 180, 255);
+        margin-left: 192px;
+        
+
+    }
