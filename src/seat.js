@@ -58,5 +58,78 @@ document.addEventListener('DOMContentLoaded', function() {
       return seatPrices.standard;
     }
   }
+
+const priceElement = document.querySelector('.firstButton');
+priceElement.addEventListener('click', changeColor);
+
+function changeColor() {
+  const seatingArea = document.querySelector('.seating-area'); 
+  const seats = seatingArea.querySelectorAll('.seat').length;
+ 
+
+  seatingArea.style.color = '';
+
+  for (let i = 1; i <= seats; i++) {
+    const seat = seatingArea.querySelector('.seat:nth-child(' + i + ')');
+    const seatNumber = parseInt(seat.innerText);
+    const seatPrice = getSeatPrice(seatNumber);
+
+    if (seatPrice === seatPrices.standard) {
+      if (seat.style.color !== 'red') {
+        seat.style.color = 'red';
+      } else {
+        seat.style.color = '';
+      }
+    } 
+  }
+}
+const priceElementOne = document.querySelector('.buttonOne');
+priceElementOne.addEventListener('click', changeColorOne);
+
+function changeColorOne() {
+  const seatingArea = document.querySelector('.seating-area');
+  const seats = seatingArea.querySelectorAll('.seat').length;
+
+  seatingArea.style.color = '';
+
+  for (let i = 1; i <= seats; i++) {
+    const seat = seatingArea.querySelector('.seat:nth-child(' + i + ')');
+    const seatNumber = parseInt(seat.innerText);
+    const seatPrice = getSeatPrice(seatNumber);
+
+    if (seatPrice === seatPrices.premium) {
+      if (seat.style.color !== 'green') {
+        seat.style.color = 'green';
+      } else {
+        seat.style.color = '';
+      }
+    }
+  }
+}
+const priceElementTwo = document.querySelector('.buttonTwo');
+priceElementTwo.addEventListener('click', changeColorTwo);
+
+function changeColorTwo() {
+  const seatingArea = document.querySelector('.seating-area');
+  const seats = seatingArea.querySelectorAll('.seat').length;
+
+  seatingArea.style.color = '';
+
+  for (let i = 1; i <= seats; i++) {
+    const seat = seatingArea.querySelector('.seat:nth-child(' + i + ')');
+    const seatNumber = parseInt(seat.innerText);
+    const seatPrice = getSeatPrice(seatNumber);
+
+    if (seatPrice === seatPrices.vip) {
+      if (seat.style.color !== 'blue') {
+        seat.style.color = 'blue';
+      } else {
+        seat.style.color = '';
+      }
+    }
+  }
+}
+
 });
+
 

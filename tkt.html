@@ -34,15 +34,36 @@
         </div>
       </div>
     </nav>
+  
+    
   </header>
   <main id="main"></main>
-  <div class="container d-flex align-items-center justify-content-between">
-    <div>
-      <button class="btnOpen">ყიდვა</button>
+  
+  <div class="container d-flex align-items-center mr-5 justify-content-between">
+
+      <div>
+      <button  onclick="changeColor()" class="firstButton chooseBtn">12 ლ</button>
+      
+      <button  onclick="changeColorOne()" class="buttonOne chooseBtn">20 ლ</button>
+      
+      <button  onclick="changeColorTwo()" class="buttonTwo chooseBtn">30 ლ</button>
     </div>
     
-    <div class="cart"></div>
+      <div class="cart"></div>
+    
+   
   </div>
+  <div class="container d-flex">
+    <div class="font_size row mt-5">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+      <p>5</p>
+    </div>
+    <div id="seatingArea" class="seating-area"></div>
+  </div>
+
   <section class="box">
     <div class="close">&times;</div>
     <div class="circle">
@@ -64,26 +85,33 @@
         <input type="text" class="last_name" required="required">
         <label for="last_name">გვარი</label>
       </div>
-      <button class="btnSubmit">რეგისტრაცია</button>
+      <button class="btnSubmit btn_primary">რეგისტრაცია</button>
     </div>
     <div class="confirmation-box" style="display: none;">
       <h1>რეგისტრაცია დადასტურებულია</h1>
       <div class="body-text">
       </div>
       <p> მადლობა </p>
-      <button class="btnClose">დახურვა</button>
+      <button class="btnClose btn_primary">დახურვა</button>
     </div>
   </section>
-  <div class="container d-flex">
-    <div class="font_size row mt-5">
-      <p>1</p>
-      <p>2</p>
-      <p>3</p>
-      <p>4</p>
-      <p>5</p>
-    </div>
-    <div class="seating-area"></div>
+  
+<div class="container d-flex align-items-center justify-content-between">
+  
+  
+  <div class="d-flex align-items-center">
+    <button class="yellowCircle"></button>
+  <h4 class="text-white">-არჩეული</h4>
   </div>
+  <div>
+    <button class="btnOpen btn_primary">ყიდვა</button>
+  </div>
+ 
+  
+</div>
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script src="./src/seat.js"></script>
   <script src="src/moviesfortkt.js"></script>

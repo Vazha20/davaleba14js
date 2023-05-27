@@ -287,10 +287,10 @@ p {
     margin-top: 28px;
     font-size: 22px;
 }
-button {
+.btn_primary {
     display: block;
     margin: 0 auto;
-    margin-top: 25px;
+    
     padding: 10px 43px 10px 43px;
     border: none;
     border-radius: 32px;
@@ -298,8 +298,8 @@ button {
     background-color: #026948;
     color: #fcfcfc;
 }
-button:hover,
-button:focus {
+.btn_primary:hover,
+.btn_primary:focus {
     background-color: #026948;
     outline: #026948 2px solid;
     cursor: pointer;
@@ -319,4 +319,16 @@ button:focus {
     transform: rotate(50deg);
     display: none;
     animation: slant-animate .8s ease-in forwards;
+}
+.chooseBtn{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+}
+.yellowCircle{
+    background-color: yellow;
+    border-radius: 20px;
+    padding: 20px;
 }
