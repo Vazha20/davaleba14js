@@ -15,6 +15,15 @@ let btnClose = document.querySelector(".btnClose");
 let registrationBox = document.querySelector(".registration-box");
 let confirmationBox = document.querySelector(".confirmation-box");
 let btnSubmit = document.querySelector(".btnSubmit");
+let ss = document.querySelector(".ss")
+let bb = document.querySelector(".bb")
+let cc = document.querySelector(".cc")
+let dd = document.querySelector(".dd")
+let jj = document.querySelector(".jj")
+let qq = document.querySelector(".qq")
+let qq1 = document.querySelector(".qq1")
+let qq2 = document.querySelector(".qq2")
+let qq3 = document.querySelector(".qq3")
 
 
 btnSubmit.addEventListener("click", ()=>{
@@ -35,14 +44,46 @@ btnOpen.addEventListener("click", ()=>{
     btnOpen.style.display="none";
     box.style.display="block";
     body.style.backgroundColor="#222";
+    seatingArea.style.display = "none";
+    ss.style.display = "none";
+    bb.style.display = "none";
+    cc.style.display = "none";
+    dd.style.display = "none";
+    jj.style.display = "none";
+    qq.style.display = "none";
+    qq1.style.display = "none";
+    qq2.style.display = "none";
+    qq3.style.display = "none";
+
+
 });
 close.addEventListener("click", ()=>{
     btnOpen.style.display="block";
     box.style.display="none";
     body.style.backgroundColor="";
+    seatingArea.style.display = "";
+    ss.style.display = "";
+    bb.style.display = "";
+    cc.style.display = "";
+    dd.style.display = "";
+    jj.style.display = "";
+    qq.style.display = "";
+    qq1.style.display = "";
+    qq2.style.display = "";
+    qq3.style.display = "";
 });
 btnClose.addEventListener("click", ()=>{
     btnOpen.style.display="block";
     box.style.display="none";
     body.style.backgroundColor="";
+    seatingArea.style.display = "";
+    ss.style.display = "";
+    bb.style.display = "";
+    cc.style.display = "";
+    dd.style.display = "";
+    jj.style.display = "";
+    qq.style.display = "";
+    qq1.style.display = "";
+    qq2.style.display = "";
+    qq3.style.display = "";
 });

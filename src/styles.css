@@ -92,6 +92,7 @@ main {
     justify-content: center;
 }
 .movie {
+    cursor: pointer;
     width: 300px;
     margin: 1rem;
     background-color: var(--secondary-color);
@@ -105,9 +106,9 @@ main {
 }
 .movie-info {
     color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   
+  
+    
     gap: 0.2rem;
     padding: 0.5rem 1rem 1rem;
     letter-spacing: 0.5px;
@@ -350,3 +351,23 @@ p {
         
 
     }
+
+.qwqw img{
+    width: 100%;
+    
+   
+    
+}
+.back-button {
+    margin-top: 16px;
+    background-color:#026948;
+    padding: 10px 26px;
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+    border-style: none;
+    margin-left: 12px;
+  }
+  .movie-infotkt{
+    color: white;
+  }
