@@ -24,6 +24,10 @@ let qq = document.querySelector(".qq")
 let qq1 = document.querySelector(".qq1")
 let qq2 = document.querySelector(".qq2")
 let qq3 = document.querySelector(".qq3")
+let mm = document.querySelector(".mm")
+let tt = document.querySelector(".tt")
+
+
 
 
 btnSubmit.addEventListener("click", ()=>{
@@ -54,6 +58,9 @@ btnOpen.addEventListener("click", ()=>{
     qq1.style.display = "none";
     qq2.style.display = "none";
     qq3.style.display = "none";
+    mm.style.display = "none";
+    tt.style.display = "none";
+
 
 
 });
@@ -71,6 +78,8 @@ close.addEventListener("click", ()=>{
     qq1.style.display = "";
     qq2.style.display = "";
     qq3.style.display = "";
+    mm.style.display = "";
+    tt.style.display = "none";
 });
 btnClose.addEventListener("click", ()=>{
     btnOpen.style.display="block";
@@ -86,4 +95,6 @@ btnClose.addEventListener("click", ()=>{
     qq1.style.display = "";
     qq2.style.display = "";
     qq3.style.display = "";
+    mm.style.display = "";
+    tt.style.display = "none";
 });

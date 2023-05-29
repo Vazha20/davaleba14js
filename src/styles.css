@@ -177,6 +177,7 @@ main {
 
 #tktColor {
     background-color: #222222;
+    
 }
 .box {
     position: relative;
@@ -371,3 +372,26 @@ p {
   .movie-infotkt{
     color: white;
   }
+
+.borderSeat{
+    
+    border-radius: 30px;
+    border: 5px solid blue;
+    padding: 10px;
+
+}
+.screenArea{
+    margin-left: 30%;
+}
+.textselect_seat{
+    margin-left: 37%;
+}
+    
+.btn_date{
+    border-radius: 20px;
+    border-style: none;
+    padding: 10px;
+    background-color:black;
+    color: white;
+}
+    
