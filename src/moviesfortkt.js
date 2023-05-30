@@ -6,7 +6,6 @@ const main = document.getElementById('main');
 const form = document.getElementById('form');
 const search = document.getElementById('search');
 
-// Get popular movies on page load
 getMovies(API_URL);
 
 async function getMovies(url) {
@@ -41,7 +40,6 @@ function showMovies(movies) {
       showMovieDetails(id, title, poster_path, overview, vote_average);
       qwerty.style.display=[]
       qw.style.display="none"
-      
     });
 
     main.appendChild(movieEl);
@@ -59,7 +57,6 @@ async function showMovieDetails(id, title, poster_path, overview, vote_average) 
   const trailerData = await res.json();
   const trailers = trailerData.results;
 
-  // Filter trailers to get only official trailers
   const officialTrailers = trailers.filter(trailer => trailer.type === 'Trailer' && trailer.site === 'YouTube');
 
 

@@ -64,51 +64,45 @@
     background-color: var(--primary-color);
     margin: 0;
 }
-header {
-    padding: 1rem;
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--secondary-color);
-}
 .search {
+    margin-top: 24px;
+    margin-left: 10px;
     background-color: transparent;
-    border: 2px solid var(--primary-color);
+    border: 2px solid white;
     border-radius: 50px;
     font-family: inherit;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    color: black;
 }
 .search::placeholder {
-    color: #ffffff;
+    color: white;
 }
 .search:focus {
     outline: none;
     background-color: var(--primary-color);
 }
-main {
+#main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .movie {
     cursor: pointer;
-    width: 300px;
-    margin: 1rem;
+    width: 250px;
+    margin: 0.9rem;
     background-color: var(--secondary-color);
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
-    border-radius: 3px;
+    border-radius: 3px; 
+    border-style: none;
 }
 .movie img {
     width: 100%;
 }
 .movie-info {
     color: #eee;
-   
-  
-    
     gap: 0.2rem;
     padding: 0.5rem 1rem 1rem;
     letter-spacing: 0.5px;
@@ -130,6 +124,12 @@ main {
 }
 .movie-info span.red {
     color: red;
+}
+#hideGuide{
+    margin-left: 1%;
+}
+.img_position{
+    margin-left: 5%;
 }
 .overview {
     background-color: #fff;
@@ -164,20 +164,18 @@ main {
 .font_size p{
     font-size: 40px;
     color: white;
-    height: 15%;
-    
-   
-    
+    height: 15%;   
+}
+.change-position{
+    margin-left: 12px;
 }
 .cart {
     color: white;
     padding: 10px;
     background-color: #222222;
 }
-
 #tktColor {
-    background-color: #222222;
-    
+    background-color: #222222;   
 }
 .box {
     position: relative;
@@ -339,25 +337,17 @@ p {
     
 }
 .arc{
-        width:500px;
-        height:5px;
-        border-radius:50%;
-        background-color: #929292;
-        
-        
-    }
-    .screenText{
-        color: rgb(114, 180, 255);
-        margin-left: 192px;
-        
-
-    }
-
+    width:500px;
+    height:5px;
+    border-radius:50%;
+    background-color: #929292;   
+}
+.screenText{
+    color: rgb(114, 180, 255);
+    margin-left: 192px;
+}
 .qwqw img{
     width: 100%;
-    
-   
-    
 }
 .back-button {
     margin-top: 16px;
@@ -368,30 +358,37 @@ p {
     color: white;
     border-style: none;
     margin-left: 12px;
-  }
-  .movie-infotkt{
+}
+.movie-infotkt{
     color: white;
-  }
-
+}
 .borderSeat{
-    
     border-radius: 30px;
     border: 5px solid blue;
     padding: 10px;
-
 }
 .screenArea{
     margin-left: 30%;
 }
 .textselect_seat{
     margin-left: 37%;
-}
-    
+} 
 .btn_date{
     border-radius: 20px;
     border-style: none;
     padding: 10px;
     background-color:black;
     color: white;
+} 
+.movie_navbar{
+    background-color: #222222
 }
-    
+.pd{
+    padding: 0px 26px;
+}
+.bnbn{
+    margin-top: 6px;
+}
+.logo_margin{
+    margin-left: 1%;
+}
